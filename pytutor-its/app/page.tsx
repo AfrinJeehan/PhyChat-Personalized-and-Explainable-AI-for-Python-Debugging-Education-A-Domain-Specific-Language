@@ -142,7 +142,7 @@ export default function Home() {
       <footer className="border-t border-border mt-20">
         <div className="container mx-auto px-4 py-8 text-center text-sm text-muted-foreground">
           <p>© 2026 PhyChat - AI-Powered Python Debugging Assistant</p>
-          <p className="mt-2">Domain-Specific, Personalized, and Explainable AI for Programming Education</p>
+          <p className="mt-2">Domain-Specific, Personalized, and Explainable AI for Python Programming Education</p>
         </div>
       </footer>
     </div>
