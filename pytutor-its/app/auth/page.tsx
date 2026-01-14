@@ -41,7 +41,7 @@ export default function AuthPage() {
             </div>
             <CardTitle className="text-2xl">Student Authentication</CardTitle>
             <CardDescription>
-              Enter your details to participate in the PyTutor AI research study
+              Enter your details to start your PhyChat learning journey
             </CardDescription>
           </CardHeader>
 
@@ -76,16 +76,16 @@ export default function AuthPage() {
               </div>
 
               <div className="bg-muted/50 rounded-lg p-4 space-y-3">
-                <h3 className="font-semibold text-sm">Research Consent</h3>
+                <h3 className="font-semibold text-sm">Learning Platform Agreement</h3>
                 <p className="text-sm text-muted-foreground">
-                  This study is conducted by Group 03 as part of our Final Year Research Project
-                  on "Personalized and Explainable AI for Python Debugging Education."
+                  PhyChat uses AI to provide personalized debugging assistance and track your 
+                  learning progress to improve your experience.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Your interactions will be recorded for research purposes</li>
-                  <li>• All data will be anonymized and kept confidential</li>
-                  <li>• You may withdraw from the study at any time</li>
-                  <li>• Results will be used solely for academic research</li>
+                  <li>• Your conversations and progress will be saved</li>
+                  <li>• Data is used to personalize your learning experience</li>
+                  <li>• All information is kept secure and confidential</li>
+                  <li>• You can delete your data at any time</li>
                 </ul>
                 <div className="flex items-start gap-2 pt-2">
                   <input
@@ -97,22 +97,18 @@ export default function AuthPage() {
                     required
                   />
                   <label htmlFor="consent" className="text-sm cursor-pointer">
-                    I have read and understood the research consent information, and I agree to
-                    participate in this study.
+                    I agree to the terms and conditions and understand how my data will be used.
                   </label>
                 </div>
               </div>
 
               <Button type="submit" className="w-full" size="lg" disabled={!consent}>
-                Continue to PyTutor AI
+                Continue to PhyChat
               </Button>
             </form>
 
             <div className="mt-6 text-center text-xs text-muted-foreground">
-              <p>Questions about the study? Contact Group 03</p>
-              <p className="mt-1">
-                Afrin Jeehan • Rifnas • Viyaasan
-              </p>
+              <p>Need help? Visit our <Link href="/contact" className="text-primary hover:underline">Contact page</Link></p>
             </div>
           </CardContent>
         </Card>
