@@ -36,12 +36,12 @@ export function Sidebar({
       {/* Logo Section */}
       <div className="p-4 border-b border-border">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-blue-500 flex items-center justify-center">
-            <span className="text-white font-bold text-sm">PT</span>
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#3776AB] to-[#FFD43B] flex items-center justify-center">
+            <span className="text-white font-bold text-sm">Φ</span>
           </div>
           <div>
-            <h1 className="font-bold text-lg">PyTutor AI</h1>
-            <p className="text-xs text-muted-foreground">Debug Smarter</p>
+            <h1 className="font-bold text-lg">PhyChat</h1>
+            <p className="text-xs text-muted-foreground">AI Debug Assistant</p>
           </div>
         </div>
       </div>

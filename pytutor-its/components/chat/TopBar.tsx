@@ -28,7 +28,7 @@ export function TopBar({ onToggleSidebar }: TopBarProps) {
 
         {/* Center: Logo (mobile) */}
         <Link href="/" className="lg:hidden font-bold text-lg">
-          PyTutor AI
+          PhyChat
         </Link>
 
         {/* Right: Actions */}

@@ -55,10 +55,10 @@ export function ChatInterface({ messages, onSendMessage, isLoading }: ChatInterf
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
               <Bot className="h-8 w-8 text-primary" />
             </div>
-            <h2 className="text-2xl font-bold mb-2">Welcome to PyTutor AI!</h2>
+            <h2 className="text-2xl font-bold mb-2">Welcome to PhyChat!</h2>
             <p className="text-muted-foreground max-w-md mb-6">
-              Your intelligent debugging assistant. Paste your Python code and I'll help you
-              find and fix bugs with detailed explanations.
+              Your specialized AI debugging assistant. I use explainable AI and personalized learning
+              to help you master Python debugging through guided problem-solving.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-2xl">
               {[

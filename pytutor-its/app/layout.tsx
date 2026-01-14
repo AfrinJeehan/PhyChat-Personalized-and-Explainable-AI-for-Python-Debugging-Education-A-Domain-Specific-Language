@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "PyTutor AI - Intelligent Python Debugging Assistant",
-  description: "An Intelligent Tutoring System for Python debugging education using personalized and explainable AI. Developed by Group 03.",
+  title: "PhyChat - AI-Powered Python Debugging Assistant",
+  description: "Learn Python debugging through domain-specific AI assistance. Featuring CodeT5+ fine-tuning, explainable AI (LIME/SHAP), and reinforcement learning for personalized education.",
 };
 
 export default function RootLayout({
