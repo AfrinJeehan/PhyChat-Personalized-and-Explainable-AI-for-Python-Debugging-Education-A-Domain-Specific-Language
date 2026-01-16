@@ -10,7 +10,7 @@ export default function Home() {
       <nav className="border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#3776AB] to-[#FFD43B] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-lg bg-[#3776AB] flex items-center justify-center">
               <span className="text-white font-bold text-lg">Φ</span>
             </div>
             <span className="font-bold text-xl">PhyChat</span>
@@ -29,7 +29,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-[#3776AB] via-[#4B8BBE] to-[#FFD43B] bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[#3776AB]">
             Debug and Learn Python Code with AI-Powered Assistance
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -124,7 +124,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20 text-center">
-        <div className="max-w-3xl mx-auto bg-gradient-to-r from-primary/10 via-blue-500/10 to-purple-600/10 rounded-2xl p-12 border border-primary/20">
+        <div className="max-w-3xl mx-auto bg-primary/10 rounded-2xl p-12 border border-primary/20">
           <Code className="h-16 w-16 text-primary mx-auto mb-6" />
           <h2 className="text-4xl font-bold mb-4">Master Python Debugging with AI Guidance</h2>
           <p className="text-xl text-muted-foreground mb-8">

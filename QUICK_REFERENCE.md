@@ -2,13 +2,16 @@
 
 ## 🚀 Start Commands
 
-### Both Servers (Copy-Paste Ready)
+### Automated Startup (Easiest)
+Just double-click: `START_SERVERS.bat` or `START_SERVERS.ps1`
+
+### Manual Commands (Copy-Paste Ready)
 ```powershell
-# Terminal 1 - Backend
-cd "f:\Research Methodology & Scientific Communication\CST\PhyChatImp\PhyChat\backend"; python main.py
+# Terminal 1 - Backend (Virtual Environment)
+cd "f:\Research Methodology & Scientific Communication\CST\PhyChatImp\PhyChat\backend"; .\venv\Scripts\Activate.ps1; python main.py
 
 # Terminal 2 - Frontend  
-cd "f:\Research Methodology & Scientific Communication\CST\PhyChatImp\PhyChat\pytutor-its"; npm run dev
+cd "f:\Research Methodology & Scientific Communication\CST\PhyChatImp\PhyChat\pytutor-its"; node ./node_modules/next/dist/bin/next dev
 ```
 
 ## 🌐 URLs
@@ -88,14 +91,15 @@ taskkill /PID <PID> /F
 
 ### Reinstall
 ```powershell
-# Backend
+# Backend (Virtual Environment)
 cd backend
-pip install -r requirements.txt
+.\venv\Scripts\Activate.ps1
+pip install fastapi uvicorn python-dotenv httpx
 
 # Frontend
 cd pytutor-its
-rm -rf node_modules .next
-npm install --ignore-scripts
+Remove-Item -Recurse -Force node_modules,.next -ErrorAction SilentlyContinue
+npm install --ignore-scripts --legacy-peer-deps
 ```
 
 ## 📦 Key Files

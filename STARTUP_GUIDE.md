@@ -23,18 +23,32 @@
 
 ## 🎯 Starting Both Servers
 
-### Terminal 1: Backend (FastAPI)
+### Option 1: Automated Startup (Easiest) ⭐
+Just double-click one of these files:
+- `START_SERVERS.bat` - Windows batch file (recommended)
+- `START_SERVERS.ps1` - PowerShell script
+
+This will automatically:
+- ✅ Check and activate virtual environment
+- ✅ Start backend server (port 8000)
+- ✅ Start frontend server (port 3000)
+- ✅ Open browser at http://localhost:3000
+
+### Option 2: Manual Startup
+
+#### Terminal 1: Backend (FastAPI in Virtual Environment)
 ```powershell
 cd "f:\Research Methodology & Scientific Communication\CST\PhyChatImp\PhyChat\backend"
+.\venv\Scripts\Activate.ps1
 python main.py
 ```
 ✅ Backend runs on: **http://localhost:8000**
 📚 API Docs: **http://localhost:8000/docs**
 
-### Terminal 2: Frontend (Next.js)
+#### Terminal 2: Frontend (Next.js)
 ```powershell
 cd "f:\Research Methodology & Scientific Communication\CST\PhyChatImp\PhyChat\pytutor-its"
-npm run dev
+node ./node_modules/next/dist/bin/next dev
 ```
 ✅ Frontend runs on: **http://localhost:3000**
 
@@ -78,6 +92,7 @@ curl http://localhost:8000/api/recommend/TEST001
 ## 📊 Current Status
 
 ### ✅ Working Features
+- [x] **Python Virtual Environment** (isolated dependencies)
 - [x] Backend API running on port 8000
 - [x] Frontend running on port 3000
 - [x] Mock AI responses (IndexError, NameError, SyntaxError, TypeError)
@@ -86,6 +101,7 @@ curl http://localhost:8000/api/recommend/TEST001
 - [x] CORS configured for frontend-backend communication
 - [x] 6 pre-loaded debugging challenges
 - [x] Clean, beginner-friendly UI with single color scheme
+- [x] **Automated startup scripts** (START_SERVERS.bat, START_SERVERS.ps1)
 
 ### 🔄 Mock Mode (Current)
 - Using mock AI responses (no CodeT5+ yet)
