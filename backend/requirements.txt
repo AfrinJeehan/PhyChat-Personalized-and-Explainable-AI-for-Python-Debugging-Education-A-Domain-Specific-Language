@@ -1,0 +1,17 @@
+# Core FastAPI dependencies (no compilation required)
+fastapi
+uvicorn[standard]
+python-dotenv
+httpx
+
+# Note: Supabase client has heavy dependencies that require C++ compiler
+# For mock development, we'll handle database manually or use lighter alternatives
+# To use full Supabase: pip install supabase (requires Visual Studio Build Tools)
+
+# AI/ML libraries (optional - only needed when USE_MOCK_AI=false)
+# Install separately if needed: pip install transformers torch shap numpy
+# Requires Visual Studio Build Tools or pre-compiled wheels
+# transformers
+# torch
+# shap
+# numpy
